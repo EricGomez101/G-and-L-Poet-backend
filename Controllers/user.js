@@ -1,6 +1,4 @@
 const express = require('express');
-const User = require('../Models/User');
-const Note = require('../Models/Note');
 const router = express.Router();
 
 router.route('/register')
@@ -20,4 +18,8 @@ router.route('/login')
         console.log(r);
       })
   })
+  router.route('/logout')
+    .post((req, res) => {
+
+    })
 module.exports = router;
